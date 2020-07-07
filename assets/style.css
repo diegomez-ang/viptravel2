@@ -1,0 +1,39 @@
+body{
+  background-color:rgb(245, 242, 242);
+}
+
+header{
+  background-color:rgb(173, 173, 173);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contenedor-main{
+  margin-bottom: 20px;
+}
+
+main{
+  background-color: antiquewhite;
+  padding: 20px 0;
+}
+
+aside{
+  background-color: blue;
+  padding: 60px 0;
+}
+
+.widgets{
+  margin-bottom: 20px;
+}
+.widgets > div{
+  background-color: aqua;
+  padding: 20px;
+}
+img{
+  height: 10%;
+}
+
+footer{
+  padding: 20px 0;
+  background-color:rgb(173, 173, 173);
+}

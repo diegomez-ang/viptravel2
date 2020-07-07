@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(245, 242, 242);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+.cardContainer {
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+.card{
+    border-radius: 10px;
+    
+}
+.card:hover {
+    transition: box-shadow .2s ease-out;
+    box-shadow: 0 12px 20px rgba(68,68,68,0.2);
+        cursor: pointer;
+}
+
+.card-img-top {
+    height: 200px;
+border-radius: 10px 10px 0 0;
+}
+
+.card-text {
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 30px;
+    color: #444;
+}
+
+.list-group-item {
+    border: none;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #dc3545; 
+}
+.colCard{
+   max-width: 100%!important;
+   margin-top: 20px;
+   
+}
+
+
+
+.btn{
+width: 100%;
+border: none;
+}
+.txt-modal{
+    
+    font-weight: 300;
+    color: #444;
+}
+.txtItinerario{
+font-size: 12px;
+
+}

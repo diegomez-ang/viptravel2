@@ -1,0 +1,35 @@
+.footer-copyright{
+    
+    border-top:1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.aFooter{
+color: white;
+text-decoration: none;
+}
+.fb-ic:hover{
+    color: #8a939c;   
+}
+
+.aFooter:hover{
+    color: #8a939c;
+    text-decoration: underline;
+    }
+    .txtlink{
+        color: rgb(131, 131, 131);
+        font-size: 14px;justify-self: center;
+    }
+
+    .legales{
+        font-size: 10px;
+        color:#828282
+    }
+
+.img_logo{
+width: 30%;
+
+}
+
+
+    

@@ -1,0 +1,15 @@
+
+/* ACA EMPIEZA EXPERIENCIAS*/
+
+.personalizado{
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgb(185, 67, 67);
+  
+}
+.col-12{
+  padding: 40px;
+}
+.container{
+   width:max-content;
+  float: none;
+}
