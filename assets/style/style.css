@@ -64,8 +64,8 @@ img{
 /* Acá comienza el loguin */
 
 div.loguin{
-  width: 35rem;
-  height: 40rem;
+  width: 20rem;
+  height: 30rem;
   margin: 2rem auto;
   background-color: rgb(179, 173, 173);
   border-radius: 10px;
@@ -73,11 +73,11 @@ div.loguin{
   position: absolute;
   top: 25%;
   left: 37%;
-  display: none;
+/*   display: none; */
   z-index: 10;
 }
 .cabecera{
-  margin: 5rem auto;
+  margin: 0.5rem auto;
   padding: 1rem;
   border-bottom: 3px solid black;
   display: flex;
@@ -85,10 +85,16 @@ div.loguin{
   justify-content: space-between;
   align-items: center;
 }
+
 .cabecera h2{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.cabecera span{
+  font-size: 1.5rem;
   cursor: pointer;
 }
+
 .contenedor{
   margin-top: 4rem;
   margin-bottom: 1rem;
@@ -97,10 +103,42 @@ div.loguin{
   align-items: center;
   flex-wrap: wrap;
 }
+
 .campo{
   width: 80%;
   margin: 1rem auto;
 }
-.campo input{
 
+.campo input{
+  width: 100%;
+  margin: 0.5rem auto;
+  padding: 0.5rem 0;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding-left: 5%;
+}
+
+button.btnInicio{
+  background-color: palevioletred;
+  border: none;
+  padding: 1rem 2rem;
+  width: 80%;
+  border-radius: 0.5rem;
+  margin-left: 10%;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.fondoOscuro{
+  width: 100%;
+  height: 500%;
+  background-color:rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
 }

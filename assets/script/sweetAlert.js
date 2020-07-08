@@ -1,4 +1,4 @@
-swal.fire({
+/* swal.fire({
     title: "Bienvenido a Vip Travel"
 
-})
+}) */
