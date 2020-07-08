@@ -1,3 +1,5 @@
+/* css del index */
+
 body {
   background-color: rgb(245, 242, 242);
 }
@@ -57,4 +59,48 @@ img{
 
 .widgets > div{
   padding: 0 !important;
+}
+
+/* Acá comienza el loguin */
+
+div.loguin{
+  width: 35rem;
+  height: 40rem;
+  margin: 2rem auto;
+  background-color: rgb(179, 173, 173);
+  border-radius: 10px;
+  padding: 1rem 0;
+  position: absolute;
+  top: 25%;
+  left: 37%;
+  display: none;
+  z-index: 10;
+}
+.cabecera{
+  margin: 5rem auto;
+  padding: 1rem;
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.cabecera h2{
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.contenedor{
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.campo{
+  width: 80%;
+  margin: 1rem auto;
+}
+.campo input{
+
 }
