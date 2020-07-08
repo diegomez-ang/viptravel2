@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Eventos/eventos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="shortcut icon" href="../img/favicon.jpeg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="./eventos.css">
+    <link rel="shortcut icon" href="../img/favicon.jpeg">
     <title>Eventos-VipTravel</title>
 </head>
 <body>
     <div class="container">
+        <!-- Aquí empieza el header -->
         <header class="row">
             <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
 
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="../../index.html">
                         <img src="../img/LogoHeader.jpeg" class="card-img-top w-50" alt="">
                     </a>
 
@@ -31,14 +35,14 @@
                             <li class="nav-item active">
                                 <a class="nav-link" href="../../index.html">Home<span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../Experiencias/experiencias.html">Experiencias</a>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../../assets/Experiencias/experiencias.html">Experiencias</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../Eventos/eventos.html">Eventos</a>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Eventos</a>
                             </li>
 
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown active">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Más Actividades
@@ -51,12 +55,10 @@
                                     <a class="dropdown-item" href="#">Tours</a>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../../assets/Contacto/contacto.html">Contacto</a>
                             </li>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum quas voluptas et vel iste ab debitis? Nesciunt reiciendis dicta officia assumenda. Autem ab beatae unde aliquam, porro sapiente illo?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum quas voluptas et vel iste ab debitis? Nesciunt reiciendis dicta officia assumenda. Autem ab beatae unde aliquam, porro sapiente illo?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorum quas voluptas et vel iste ab debitis? Nesciunt reiciendis dicta officia assumenda. Autem ab beatae unde aliquam, porro sapiente illo?</p>
+                            
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
                             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -66,43 +68,149 @@
                 </nav>
             </div>
         </header>
+        <!-- Aquí finaliza el header -->
     </div>
+    <!-- Aquí empieza el main -->
     <main class="main">
-        <div class="carousel">
-            <a class="carousel-item" href="#two!"><img src="../img/Africa.png"></a>
-            <a class="carousel-item" href="#three!"><img src="../img/Asia.png"></a>
-            <a class="carousel-item" href="#four!"><img src="../img/Europa.png"></a>
-            <a class="carousel-item" href="#five!"><img src="../img/norteamerica.png"></a>
-            <a class="carousel-item" href="#six!"><img src="../img/Suramerica.png"></a>
-            <a class="carousel-item" href="#one!"><img src="../img/Colombia.png"></a>
-        </div>
-        <div class="container">
-            <div id="div1" class="row">
-                <div class="col s4">CRUCEROS
-                    <iframe width="300" height="200" src="https://www.youtube.com/embed/z0EcCAcPWww" frameborder="0"     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="col s4">RUMBA
-                    <iframe width="300" height="200" src="https://www.youtube.com/embed/eckSsizp71s" frameborder="0"     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="col s4">LESBIANAS
-                    <iframe width="300" height="200" src="https://www.youtube.com/embed/rA11Gp4UQ3M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div id="div2" class="row">
-                <div class="col s4">PLAYAS E ISLAS
-                    <iframe width="300" height="200" src="https://www.youtube.com/embed/1apqmtAZHGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="col s4">MEDIO ORIENTE
-                    <iframe width="300" height="200" src="https://www.youtube.com/embed/LS2ez-gDZiI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="col s4">TRENES
-                    <iframe width="300" height="200" src="https://www.youtube.com/embed/UnKJL_ifwkk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div> 
-        </div>
+        <section class="section">
+            <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50">
+                <source src="../img/agua.mp4" type="video/mp4" />
+            </video>
+            
+        </section>
     </main>
+    <!-- Aquí termina el main -->
+            <!-- aca empieza redes sociales -->
+    <div class="row bg-light pt-5 mt-5 justify-content-center">
+        <div class="col-md-2 ">
+            <section class="container">
+                <div class="row pb-5">
+                    <div class="col"><i class="fab fa-facebook"></i></div>
+                    <div class="col"><i class="fab fa-twitter"></i></div>
+                    <div class="col"><i class="fab fa-instagram"></i></div>
+                    <div class="col"><i class="fab fa-youtube"></i></div>
+                </div>
+            </section>
+        </div>
+    </div>
+            <!-- aca finaliza redes sociales -->
+    <!-- aca empieza el footer -->
+    <div class="row bg-white">
+        <div class="col">
+            <div class="container">
+                <!-- Footer -->
+                <footer class="page-footer font-small bg-white pt-4">
+                    <!-- Footer Links -->
+                    <div class="container-fluid text-center text-md-left">
+                        <!-- Grid row -->
+                        <div class="row justify-content-center ">
+                            <!-- Grid column -->
+                            <div class="col-md-3 mb-md-0 mb-3">
+                                <!-- Links -->
+                                <h6 class="text-uppercase font-weight-bold">MAPA DEL SITIO</h6>
+                                <ul class="list-unstyled ">
+                                    <li>
+                                        <a class="txtlink" href="../../index.html">HOME
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="txtlink" href="../../assets/Experiencias/experiencias.html"> EXPERIENCIAS</a>
+                                    </li>
+                                    <li>
+                                        <a class="txtlink" href="#">EVENTOS</a>
+                                    </li>
+                                    <li>
+                                        <a class="txtlink" href="../../assets/Contacto/contacto.html">CONTACTO</a>
+                                    </li>
+                                </ul>
 
-    <script>document.addEventListener('DOMContentLoaded', function() {M.AutoInit();});</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 mb-md-0 mb-3">
+
+                                <!-- Links -->
+                                <h6 class="text-uppercase font-weight-bold">INGRESO
+
+
+                                </h6>
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="txtlink" href="#!">INICIA SESIÓN</a>
+                                    </li>
+                                    <li>
+                                        <a class="txtlink" href="#!">REGISTRARSE</a>
+                                    </li>
+                                    <li>
+                                        <a class="txtlink" href="#!"> IDIOMA</a>
+                                    </li>
+                                    <li>
+                                        <a class="txtlink" href="#!">TRABAJA CON NOSOTROS</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </div>
+                    <!-- Footer Links -->
+                    <!-- Copyright -->
+                    <div class="row footer-copyright text-center justify-content-center pb-4 mt-4 pt-4
+                    pb-4 mt-4 pt-4">
+                        <div class="col-6 ">
+                            <div class="">© 2020 Copyright: Grupo2-Todos los derechos reservados </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class=""><a href="../../index.html"><img class="img_logo" src="../img/icono.jpeg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- legales -->
+                    <p class="legales mt-5 text-justify text-gray">
+                        <a href="../../assets/Desarrolladores/Equipodetrabajo.html" >Grupo 2</a>, se reserva el derecho, a su sola discreción, de modificar o sustituir las
+                        Condiciones de Uso en cualquier momento. Si las modificaciones constituyen un cambio sustancial
+                        de los términos de uso, se lo notificaremos publicando un anuncio en el sitio. En Strategic
+                        Points SAS estamos comprometidos a: A prevenir la comercialización sobre el tráfico de piezas
+                        y/o bienes pertenecientes al patrimonio cultural de la nación según la ley 397 de 1997, Decreto
+                        833 del 2001 y ley 1185 del 2008. A Prevenir la comercialización de especies de flora y fauna
+                        amenazadas o en peligro de extinción en Colombia e ilícito aprovechamiento de recursos naturales
+                        renovables, según la ley 17 de 1981, la resolución Ministerial No 1367 del 2000 y ley 1453 del
+                        2011 artículo 29. explotación sexual y pornografía con menores de edad y/o adolescentes, según
+                        artículo 44 de la constitución Colombiana, ley 679 de 2001 y/o ley 1336 de 2009 A prevenir la
+                        explotación laboral infantil según la ley de infancia y adolescencia 1098 del 2006. A garantizar
+                        la protección de los derechos de una persona o grupo de personas, comunidad o pueblo, que son
+                        vulnerados en actos de racismo o discriminación ley 1482 del 2011 y la ley 1752 del 2015
+                        castigos penales para aquellos que realicen actos de discriminación en contra de personas con
+                        discapacidad. RNT 37850.
+                        Mayores informes en su agencia de viajes o en nuestro Call Center: Bogotá: 602 2505 | Medellín:
+                        381 4546 | Resto del país: 01 8000 523 457
+                    </p>
+                    <!-- Copyright -->
+
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- Aquí termina el Footer -->
+
+    </div>
+
+    
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+</script>
+<script src="./eventos.js"></script>
 </html>
