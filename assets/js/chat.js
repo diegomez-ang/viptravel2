@@ -1,3 +1,44 @@
+/* Esconder chat */
+/* let btnFloat = document.getElementById("btnFloat");
+let ChatWindow = document.querySelector("chatWindow");
+
+
+const activarLogin=(e)=>{
+    e.preventDefault();
+    
+    setTimeout(() =>{
+        chatWindow.style.display="block";
+    }, 200);
+
+    
+}
+
+const cerrarLogin=()=>{
+   
+    ChatWindow.style.display="none";
+}
+
+
+btnChat.addEventListener("click",activarLogin); */
+/* btnCerrar.addEventListener("click", cerrarLogin); */
+
+
+//---------------------------------------------//
+
+function toggle(div) {
+   
+    var div = document.getElementById('chatWindow')
+    if ( div.style.display == 'none') {
+        div.style.display = 'block' 
+    } else {
+        div.style.display = 'none'
+    }
+}
+
+btnFloat.addEventListener('click', toggle)
+
+/* Empieza el chat */
+
 (function () {
     var Message;
     Message = function (arg) {
@@ -55,3 +96,4 @@
         }, 2000);
     });
 }.call(this)); 
+

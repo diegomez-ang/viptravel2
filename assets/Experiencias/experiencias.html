@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="../Contacto/style.css">
+    <link rel="stylesheet" href="../Contacto/style.css">
     <link rel="stylesheet" href="../style/experiencias.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/footer.css">
@@ -37,7 +38,8 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="../../index.html">Home<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="../../index.html">Home<span
+                                        class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../Experiencias/experiencias.html">Experiencias</a>
@@ -73,7 +75,7 @@
         </header>
     </div>
 
-      
+
     <!-- aca empieza experiencias -->
 
     <div class="container">
@@ -534,43 +536,44 @@
 
         </section>
     </div>
+
     <!-- acá empieza aside chat -->
-    <div class="flotante"><a  href="#"><i class="fas fa-headset"></i></a></div>
+
     <aside>
-        
-            <div class="chat_window">
-                <div class="top_menu">
-                    <div class="buttons">
-                        <div class="button close"></div>
-                        <div class="button minimize"></div>
-                        <div class="button maximize"></div>
-                    </div>
-                    <div class="title">Chat</div>
+        <div class="flotante" id="btnFloat"><i class="fas fa-headset"></i></a></div>
+        <div class="chat_window" id="chatWindow">
+            <div class="top_menu">
+                <div class="buttons">
+                    <div class="button close"></div>
+                    <div class="button minimize"></div>
+                    <div class="button maximize"></div>
                 </div>
-                <ul class="messages"></ul>
-                <div class="bottom_wrapper clearfix">
-                    <div class="message_input_wrapper">
-                        <input class="message_input" placeholder="Type your message here..." />
-                    </div>
-                    <div class="send_message">
-                        <div class="icon"></div>
-                        <div class="text">Send</div>
-                    </div>
+                <div class="title">Chat</div>
+            </div>
+            <ul class="messages"></ul>
+            <div class="bottom_wrapper clearfix">
+                <div class="message_input_wrapper">
+                    <input class="message_input" placeholder="Type your message here..." />
+                </div>
+                <div class="send_message">
+                    <div class="icon"></div>
+                    <div class="text">Send</div>
                 </div>
             </div>
-            <div class="message_template">
-                <li class="message">
-                    <div class="avatar"></div>
-                    <div class="text_wrapper">
-                        <div class="text"></div>
-                    </div>
-                </li>
+        </div>
+        <div class="message_template">
+            <li class="message">
+                <div class="avatar"></div>
+                <div class="text_wrapper">
+                    <div class="text"></div>
+                </div>
+            </li>
             <!-- </div> -->
-        
-         <!-- acá termina aside chat -->
-        
-        
-        
+
+            <!-- acá termina aside chat -->
+
+
+
     </aside>
     <!-- aca empieza redes sociales -->
     <div class="row bg-light pt-5 mt-5 justify-content-center">
@@ -694,7 +697,7 @@
 
 
 
-
+<script src="../js/chat.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

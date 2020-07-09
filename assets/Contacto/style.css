@@ -24,7 +24,7 @@
 	text-align: center;
 	box-shadow: 0px 0px 31px rgba(49, 58, 69, 0.77);
 	position: fixed;
-	top: 50%;
+	top: 24%;
 	right: 0.5%;
 	font-size: 36px;
 	cursor: pointer;
@@ -36,10 +36,10 @@
 	text-decoration: none;
 }
 
-a {
+i{
 	color: wheat;
 }
 
-a:hover {
+i:hover {
 	color: white;
 }
