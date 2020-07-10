@@ -41,7 +41,8 @@ aside {
 }
 
 .btn-primary {
-  background-image: url(../img/fondoBuscador.jpeg);
+  width: 30%;
+  
   border: none;
   border-radius: 10px;
 }

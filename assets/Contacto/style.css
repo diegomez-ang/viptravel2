@@ -38,11 +38,11 @@
 
 
 i{
-	color: wheat;
+	color: rgb(26, 26, 26);
 }
 
 i:hover {
-	color: white;
+	color: rgb(4, 98, 248);
 }
 =======
 body {

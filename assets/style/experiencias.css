@@ -35,6 +35,11 @@ body {
   color: #444;
 }
 
+.chatIcon{
+color: white;
+
+}
+
 .list-group-item {
   border: none;
 }

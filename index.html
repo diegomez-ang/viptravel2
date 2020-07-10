@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/Contacto/style.css">
+    <link rel="stylesheet" href="./assets/style/experiencias.css">
+    <link rel="stylesheet" href="./assets/style/footer.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <link rel="stylesheet" href="./assets/style/footer.css">
     <link rel="icon" href="assets/img/favicon.jpg">
     <title>VipTravel</title>
 </head>
@@ -21,7 +24,8 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
 
                     <a class="navbar-brand" href="#">
-                        <img src="./assets/img/LogoHeader.jpeg" class="card-img-top w-50" alt="">
+                        <img src="./assets/img/LogoHeader.jpeg" class="card-img-top" alt=""
+                            style="width:40%; height:40%">
                     </a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -70,6 +74,7 @@
                 </nav>
             </div>
         </header>
+        
 
         <!-- Acá comienza el login -->
         <div class="contenedor">
@@ -163,7 +168,7 @@
                             </select>
                         </div>
                     </div>
-                    <button class="btn btn-primary" type="submit">Buscar</button>
+                    <button class="btn btn-primary bg-primary" type="submit">Buscar</button>
                 </form>
             </div>
         </section>
@@ -325,15 +330,52 @@
                 </a>
             </aside>
         </section>
+        <!-- acá empieza aside chat -->
+
+        <aside>
+            <div class="flotante" id="btnFloat"><i class="fas fa-headset chatIcon"></i></a></div>
+            <div class="chat_window" id="chatWindow">
+                <div class="top_menu">
+                    <div class="buttons">
+                        <div class="iconoLogo"><img src="./assets/img/icono.jpeg" alt=""></div>
+                        <!-- <div class="button minimize" id="btnMinimizar"></div>
+                    <div class="button maximize"></div> -->
+                    </div>
+                    <div class="title">VIP Travel - Hora local: 08:58 pm</div>
+                </div>
+                <ul class="messages"></ul>
+                <div class="bottom_wrapper clearfix">
+                    <div class="message_input_wrapper">
+                        <input class="message_input" placeholder="Type your message here..." />
+                    </div>
+                    <div class="send_message">
+                        <div class="icon"></div>
+                        <div class="text">Send</div>
+                    </div>
+                </div>
+            </div>
+            <div class="message_template">
+                <li class="message">
+                    <div class="avatar"></div>
+                    <div class="text_wrapper">
+                        <div class="text"></div>
+                    </div>
+                </li>
+                <!-- </div> -->
+
+                <!-- acá termina aside chat -->
+                
+        </aside>
+
         <!-- aca empieza redes sociales -->
         <div class="row bg-light pt-5 mt-5 justify-content-center">
             <div class="col-md-2 ">
                 <section class="container">
                     <div class="row pb-5">
-                        <div class="col"><i class="fab fa-facebook"></i></div>
-                        <div class="col"><i class="fab fa-twitter"></i></div>
-                        <div class="col"><i class="fab fa-instagram"></i></div>
-                        <div class="col"><i class="fab fa-youtube"></i></div>
+                        <div class="col"><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></div>
+                    <div class="col"><a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></a></div>
+                    <div class="col"><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a></a></div>
+                    <div class="col"><a href="https://www.youtube.com/?gl=CO&hl=es-419"><i class="fab fa-youtube"></a></i></a></a></div>
                     </div>
                 </section>
             </div>
@@ -471,18 +513,21 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="./assets/script/sweetAlert.js"></script>
     <script src="./assets/script/index.js"></script>
+    <script src="./assets/js/chat.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
 </body>
 
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-</script>
+
 
 </html>

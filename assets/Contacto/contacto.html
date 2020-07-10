@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
+    <title>VIP Travel - Contacto</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="icon" href="../img/fav_convert.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/experiencias.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="../Contacto/style.css">
+    <link rel="icon" href="../img/favicon.jpg">
+    
 </head>
 
 <body>
@@ -23,7 +27,7 @@
                     <nav class="navbar navbar-expand-lg navbar-light bg-white">
     
                         <a class="navbar-brand" href="#">
-                            <img src="../img/LogoHeader.jpeg" class="card-img-top w-50" alt="">
+                            <img src="../img/LogoHeader.jpeg" class="card-img-top" alt="" style="width:40%; height:40%">
                         </a>
     
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -38,10 +42,10 @@
                                     <a class="nav-link" href="../../index.html">Home<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./assets/Experiencias/experiencias.html">Experiencias</a>
+                                    <a class="nav-link" href="../Experiencias/experiencias.html">Experiencias</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./assets/Eventos/eventos.html">Alojamiento</a>
+                                    <a class="nav-link" href="../Eventos/eventos.html">Alojamiento</a>
                                 </li>
     
                                 <li class="nav-item dropdown">
@@ -58,7 +62,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./assets/Contacto/contacto.html">Contacto</a>
+                                    <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
                                 </li>
                             </ul>
                             <form class="form-inline my-2 my-lg-0">
@@ -72,12 +76,11 @@
         </div>
        
     
-    <main>
-        <div class="flotante" ><a class="vinculo" href="#"><i class="fas fa-headset"></i></a></div>
+    <main class="mt-5">
         <div class="container shadow-lg bg-red rounded">
             <div class="row d-flex justify-content-center">
                 <div class="col-3 col-md. d-flex flex-column justify-content-center align-items-center border border-right-0 ">
-                    <img class="img" src="../img/icono.jpeg" alt="img VipTravel">
+                    <img class="img" src="../img/LogoHeader.jpeg" alt="img VipTravel">
                     <h2>Hola!</h2>
                     <p>En VipTravel queremos saber mas de ti, por favor dejanos tus datos.</p>
                 </div>
@@ -148,7 +151,49 @@
         </div>
         </div>
         </div>
+        
     </main>
+    <!-- acá empieza aside chat -->
+
+  <!-- acá empieza aside chat -->
+
+  <aside>
+    <div class="flotante" id="btnFloat"><i class="fas fa-headset chatIcon"></i></a></div>
+    <div class="chat_window" id="chatWindow">
+        <div class="top_menu">
+            <div class="buttons">
+                <div class="iconoLogo"><img src="../img/icono.jpeg" alt=""></div>
+                <!-- <div class="button minimize" id="btnMinimizar"></div>
+                <div class="button maximize"></div> -->
+            </div>
+            <div class="title">VIP Travel - Hora local: 08:58 pm</div>
+        </div>
+        <ul class="messages"></ul>
+        <div class="bottom_wrapper clearfix">
+            <div class="message_input_wrapper">
+                <input class="message_input" placeholder="Type your message here..." />
+            </div>
+            <div class="send_message">
+                <div class="icon"></div>
+                <div class="text">Send</div>
+            </div>
+        </div>
+    </div>
+    <div class="message_template">
+        <li class="message">
+            <div class="avatar"></div>
+            <div class="text_wrapper">
+                <div class="text"></div>
+            </div>
+        </li>
+        <!-- </div> -->
+
+        <!-- acá termina aside chat -->
+
+
+
+    </aside>
+    
     <!-- aca empieza redes sociales -->
     <div class="row bg-light pt-5 mt-5 justify-content-center">
         <div class="col-md-2 ">
@@ -270,6 +315,8 @@
         </div>
     </div>
     <!-- Footer -->
+
+    <script src="../js/chat.js"></script>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -282,6 +329,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="script_c.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
