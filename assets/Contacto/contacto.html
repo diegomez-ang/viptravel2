@@ -85,29 +85,29 @@
                     <h3 class="registro text-white mt-5 mb-5">Registro</h3>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="row register-form d-flex justify-content-center">
+                            <div class="row register-form d-flex justify-content-center" id="formulario">
                                 <div class="col-md-5">
                                     <div class="form-group opacity-5">
-                                        <input type="text" class="form-control opacity-5" placeholder="Nombre*"
+                                        <input id="name" type="text" class="form-control opacity-5" placeholder="Nombre*"
                                             value="" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nacionalidad*" value="" />
+                                        <input id="nacionality" type="text" class="form-control" placeholder="Nacionalidad*" value="" />
                                     </div>
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Edad" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="E-mail *" value="" />
+                                        <input id="email" type="email" class="form-control" placeholder="E-mail *" value="" />
                                     </div>
 
                                 </div>
                                 <div class="col-md-5">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Apellido*" value="" />
+                                        <input id="lastname" type="text" class="form-control" placeholder="Apellido*" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <select class="form-control">
+                                        <select id="genre" class="form-control">
                                             <option class="hidden" selected disabled>Genero</option>
                                             <option>Femenino</option>
                                             <option>Masculino</option>
@@ -116,7 +116,7 @@
                                     </div>
                                     <div class="form-group">
                                         <select class="form-control">
-                                            <option class="hidden" selected disabled>Destino de interes</option>
+                                            <option id="destiny" class="hidden" selected disabled>Destino de interes</option>
                                             <option>Africa</option>
                                             <option>Asia</option>
                                             <option>Colombia</option>
@@ -126,16 +126,20 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Cumpleaños*" value="" />
+                                        <input id="birthday" type="text" class="form-control" placeholder="Cumpleaños*" value="" />
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row d-flex justify-content-center">
-                                <textarea class="comentarios" placeholder="Comentarios" required></textarea>
-                            </div>
+                                </div>                                
+                            </div>                            
                         </div>
+                        <div class="row d-flex justify-content-center ">
+                            <textarea id="comentarios" class="comentarios" placeholder="Comentarios*" required></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input  type="checkbox" class="form-check-input " id="terminos">
+                            <label class="form-check-label" for="exampleCheck1"><a id="condiciones" href="#">Aceptar terminos y condiciones</a></label>
+                          </div>
                         <div class="row d-flex justify-content-center">
-                            <button type="button" class="btn btn-outline-light mt-5 mb-5">Enviar</button>
+                            <button type="submit" class="btn btn-outline-light mt-5 mb-5" id="enviar">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -276,6 +280,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="script_c.js"></script>
 </body>
 
 </html>
