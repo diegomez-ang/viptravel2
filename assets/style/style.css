@@ -1,3 +1,5 @@
+/* css del index */
+
 body {
   background-color: rgb(245, 242, 242);
 }
@@ -11,7 +13,7 @@ header {
 }
 
 main {
-/*   background-color: antiquewhite; */
+  /*   background-color: antiquewhite; */
   padding: 20px 0;
 }
 
@@ -26,9 +28,11 @@ aside {
 
 .buscador>.buscador2 {
   background-image: url(../img/fondoBuscador.jpeg);
-/*   background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   opacity: 0.7;
   padding: 10px;
+  border-radius: 10px;
+  border: none;
 }
 
 .widgets {
@@ -36,13 +40,23 @@ aside {
 
 }
 
+.btn-primary {
+  background-image: url(../img/fondoBuscador.jpeg);
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-primary:hover {
+  background-position: left;
+}
+
 .widgets>div {
-background-color: white;
+  background-color: white;
   padding: 20px;
   border-radius: 20px;
 }
 
-.tituloPromo{
+.tituloPromo {
   padding: 20px;
 }
 
@@ -51,10 +65,208 @@ footer {
   background-color: rgb(173, 173, 173);
 }
 
-img{
+img {
   width: 100%;
 }
 
-.widgets > div{
+.widgets>div {
   padding: 0 !important;
+}
+
+/* Acá comienza el loguin */
+
+.contenedor {
+  width: 60rem;
+  height: 25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /*   padding: 1rem 1rem; */
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+
+.logoVip {
+  width: 100px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img .vipTravel {
+  width: 100px;
+}
+
+.imgLogo {
+  display: flex;
+  justify-content: start;
+  /*   align-items: center; */
+}
+
+.login-container {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.form {
+  width: 300px;
+}
+
+.form h3 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: rgb(146, 146, 146);
+}
+
+.input-div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9dd;
+}
+
+.input-div:after,
+.input-div:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(252, 144, 180);
+  transition: .3s;
+}
+
+.input-div:after {
+  right: 50%;
+}
+
+.input-div:before {
+  left: 50%;
+}
+
+.input-div.focus:after,
+.input-div.focus:before {
+  width: 50%;
+}
+
+.input-div.focus .i i {
+  color: rgb(252, 144, 180);
+}
+
+.input-div.focus div h5 {
+  top: -5px;
+  font-size: 15px;
+}
+
+.input-div.one {
+  margin-top: 0;
+}
+
+.input-div.two {
+  margin-bottom: 4px;
+}
+
+.i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.i i {
+  color: #d9d9dd;
+  transition: .3s;
+}
+
+.input-div>div {
+  position: relative;
+  height: 45px;
+}
+
+.input-div>div h5 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d9d9dd;
+  font-size: 18px;
+  transition: .3s;
+}
+
+.input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  color: #555555;
+}
+
+.a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.a:hover {
+  color: rgb(252, 144, 180);
+}
+
+.btnLogin {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 25px;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-color: rgb(252, 144, 180);
+  cursor: pointer;
+  color: #d9d9dd;
+  background-size: 200%;
+  transition: 0.5s;
+
+}
+
+.btnLogin:hover {
+  background-position: right;
+  background-color: palevioletred;
+  color: #fbfbff;
+}
+
+.img img {
+  width: 300px;
+}
+
+.avatar {
+  width: 100px;
+}
+
+.fondoOscuro {
+  width: 100%;
+  height: 500%;
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
 }
