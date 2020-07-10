@@ -1,40 +1,50 @@
-.img{
-    width: 80%;
+.img {
+	width: 80%;
 }
 
-.registro{
-    text-align: center;
-    margin-top: 10px;
+.registro {
+	text-align: center;
+	margin-top: 10px;
 }
 
-.gradiente{
-    background-image: url(../img/fondo_formulario.png) ;
+.gradiente {
+	background-image: url(../img/fondo_formulario.png);
 }
 
-.comentarios{
-    width: 70%;
+.comentarios {
+	width: 70%;
 
 }
-.flotante{
-	background: #bd2130;
+
+.flotante {
+	background: #d71818d9;
 	width: 64px;
-	height: 64px;
-	border-radius: 50%;
-	text-align:center;
-	color: white;
-	box-shadow:0px 0px 3px rgba(0,0,0,0.5),3px 3px 3px rgba(0,0,0,0.25);
+	height: 78px;
+	border-radius: 20px 5px 5px 20px;
+	text-align: center;
+	box-shadow: 0px 0px 31px rgba(49, 58, 69, 0.77);
 	position: fixed;
-	top: 200px;
-	right: 20px;
-	font-size: 40px;
-	display: inline-block;
-	cursor: default;
+	top: 24%;
+	right: 0.5%;
+	font-size: 36px;
+	cursor: pointer;
+	padding-top: 14px;
 }
-.vinculo{
-    color: white;
-    text-decoration: none;
 
+.vinculo {
+	color: white;
+	text-decoration: none;
 }
+
+
+i{
+	color: wheat;
+}
+
+i:hover {
+	color: white;
+}
+=======
 body {
 	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
   }
@@ -52,3 +62,4 @@ body {
   }
   
   
+

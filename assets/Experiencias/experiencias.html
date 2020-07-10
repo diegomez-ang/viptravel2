@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Contacto/style.css">
     <link rel="stylesheet" href="../style/experiencias.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/footer.css">
@@ -36,7 +38,8 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="../../index.html">Home<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="../../index.html">Home<span
+                                        class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../Experiencias/experiencias.html">Experiencias</a>
@@ -72,7 +75,7 @@
         </header>
     </div>
 
-       
+
     <!-- aca empieza experiencias -->
 
     <div class="container">
@@ -265,7 +268,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="list-group">
-                                            <h5>Itinerario : </h5>
+                                            <h5>Itinerario: </h5>
                                             <a href="#"
                                                 class="list-group-item list-group-item-action list-group-item-info">
                                                 Día 1: ciudad de origen - Estambul </a>
@@ -367,7 +370,7 @@
                                                 Tours (Opera Domingo, Martes, Viernes y Sábado). Visita de la
                                                 Ciudad en Washington. Alojamiento.</p>
                                             <h5>Documentación:</h5>
-                                            <p class="text-danger">- Es responsabilidad del cliente consultar y disponer
+                                            <p class="text-danger">Es responsabilidad del cliente consultar y disponer
                                                 de la documentación
                                                 necesaria para entrar en el país, así como de los países en tránsito
                                                 correspondientes al vuelo escogido.</p>
@@ -534,6 +537,45 @@
         </section>
     </div>
 
+    <!-- acá empieza aside chat -->
+
+    <aside>
+       
+        <div class="chat_window" id="chatWindow">
+            <div class="flotante" id="btngFloat"><i class="fas fa-headset"></i></a></div>
+            <div class="top_menu">
+                <div class="buttons">
+                    <div class="iconoLogo"><img src="../img/icono.jpeg" alt=""></div>
+                    <!-- <div class="button minimize" id="btnMinimizar"></div>
+                    <div class="button maximize"></div> -->
+                </div>
+                <div class="title">VIP Travel - Hora local: 08:58 pm</div>
+            </div>
+            <ul class="messages"></ul>
+            <div class="bottom_wrapper clearfix">
+                <div class="message_input_wrapper">
+                    <input class="message_input" placeholder="Type your message here..." />
+                </div>
+                <div class="send_message">
+                    <div class="icon"></div>
+                    <div class="text">Send</div>
+                </div>
+            </div>
+        </div>
+        <div class="message_template">
+            <li class="message">
+                <div class="avatar"></div>
+                <div class="text_wrapper">
+                    <div class="text"></div>
+                </div>
+            </li>
+            <!-- </div> -->
+
+            <!-- acá termina aside chat -->
+
+
+
+    </aside>
     <!-- aca empieza redes sociales -->
     <div class="row bg-light pt-5 mt-5 justify-content-center">
         <div class="col-md-2 ">
@@ -550,7 +592,7 @@
 
 
     <!-- aca empieza el footer -->
-    <div class="row bg-white">
+    <div class="row bg-white fondo ">
         <div class="col">
             <div class="container">
                 <!-- Footer -->
@@ -622,7 +664,7 @@
                             <div class="">© 2020 Copyright: Grupo2-Todos los derechos reservados </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class=""><a href="#"><img class="img_logo" src="../img/logo-vipTravel.jpeg" alt=""></a>
+                            <div class=""><a href="#"><img class="img_logo" src="../img/icono.jpeg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -656,6 +698,7 @@
 
 
 
+    <script src="../js/chat.js"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -667,6 +710,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>
