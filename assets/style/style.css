@@ -253,6 +253,37 @@ img {
   color: #fbfbff;
 }
 
+@media screen and (max-width:1050px){
+  .contenedor{
+    grid-gap: 5rem;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .form{
+    width: 290px;
+  }
+  .form h2{
+    font-size: 2.4rem;
+    margin: 8px 0;
+  }
+  .img img{
+    width: 400px;
+  }
+}
+@media screen and (max-width:900px){
+  .img{
+    display: none;
+  }
+  .contenedor{
+    grid-template-columns: 1fr;
+  }
+  .login-container{
+    justify-content: center;
+  }
+
+}
+
 .img img {
   width: 300px;
 }

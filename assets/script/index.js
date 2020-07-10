@@ -57,24 +57,30 @@ function ingresar() {
         user.value = "";
         pass.value = "";
     }
+
+    localStorage.setItem("Usuario", user);
 }
 
+//Función de olvidaste tu usuario y/o contraseña
 function olvidarUser() {
-    swal.fire({
-        title: "¿Olvidaste tu usuario o contraseña?",
-        text: "Ingresa tu email y te enviaremos los datos",
-        icon: "question",
-        input: "text",
-        inputPlaceholder: "Email"
-    })
+    (async()=>{
+        const {value:email} = await swal.fire({
+            title: "¿Olvidaste tu usuario o contraseña?",
+            text: "Ingresa tu email y te enviaremos los datos",
+            icon: "question",
+            input: "text",
+            inputPlaceholder: "Email",
+            showCancelButton:true,
+        })
 
-    /*     if(input.value !==""){
+        if(email){
             swal.fire({
                 title: "Información enviada",
                 text: "Por favor revisa tu correo",
                 icon: "success"
-            })
-        } */
+            });
+        }
+    })()
 }
 
 
