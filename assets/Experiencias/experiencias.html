@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../Contacto/style.css">
     <link rel="stylesheet" href="../style/experiencias.css">
@@ -268,7 +268,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="list-group">
-                                            <h5>Itinerario : </h5>
+                                            <h5>Itinerario: </h5>
                                             <a href="#"
                                                 class="list-group-item list-group-item-action list-group-item-info">
                                                 Día 1: ciudad de origen - Estambul </a>
@@ -370,7 +370,7 @@
                                                 Tours (Opera Domingo, Martes, Viernes y Sábado). Visita de la
                                                 Ciudad en Washington. Alojamiento.</p>
                                             <h5>Documentación:</h5>
-                                            <p class="text-danger">- Es responsabilidad del cliente consultar y disponer
+                                            <p class="text-danger">Es responsabilidad del cliente consultar y disponer
                                                 de la documentación
                                                 necesaria para entrar en el país, así como de los países en tránsito
                                                 correspondientes al vuelo escogido.</p>
@@ -540,15 +540,16 @@
     <!-- acá empieza aside chat -->
 
     <aside>
-        <div class="flotante" id="btnFloat"><i class="fas fa-headset"></i></a></div>
+       
         <div class="chat_window" id="chatWindow">
+            <div class="flotante" id="btngFloat"><i class="fas fa-headset"></i></a></div>
             <div class="top_menu">
                 <div class="buttons">
-                    <div class="button close"></div>
-                    <div class="button minimize"></div>
-                    <div class="button maximize"></div>
+                    <div class="iconoLogo"><img src="../img/icono.jpeg" alt=""></div>
+                    <!-- <div class="button minimize" id="btnMinimizar"></div>
+                    <div class="button maximize"></div> -->
                 </div>
-                <div class="title">Chat</div>
+                <div class="title">VIP Travel - Hora local: 08:58 pm</div>
             </div>
             <ul class="messages"></ul>
             <div class="bottom_wrapper clearfix">
@@ -697,7 +698,8 @@
 
 
 
-<script src="../js/chat.js"></script>
+    <script src="../js/chat.js"></script>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -708,6 +710,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>

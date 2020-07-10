@@ -1,29 +1,4 @@
-/* Esconder chat */
-/* let btnFloat = document.getElementById("btnFloat");
-let ChatWindow = document.querySelector("chatWindow");
-
-
-const activarLogin=(e)=>{
-    e.preventDefault();
-    
-    setTimeout(() =>{
-        chatWindow.style.display="block";
-    }, 200);
-
-    
-}
-
-const cerrarLogin=()=>{
-   
-    ChatWindow.style.display="none";
-}
-
-
-btnChat.addEventListener("click",activarLogin); */
-/* btnCerrar.addEventListener("click", cerrarLogin); */
-
-
-//---------------------------------------------//
+//------------------abrir y cerrar chat---------------------------//
 
 function toggle(div) {
    
@@ -34,12 +9,13 @@ function toggle(div) {
         div.style.display = 'none'
     }
 }
-
 btnFloat.addEventListener('click', toggle)
+
+
 
 /* Empieza el chat */
 
-(function () {
+$(function () {
     var Message;
     Message = function (arg) {
         this.text = arg.text, this.message_side = arg.message_side;
@@ -76,18 +52,20 @@ btnFloat.addEventListener('click', toggle)
                 text: text,
                 message_side: message_side
             });
+
+            /* mensaje bajando */
             message.draw();
-            return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
+            return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 200);
         };
         $('.send_message').click(function (e) {
             return sendMessage(getMessageText());
         });
         $('.message_input').keyup(function (e) {
             if (e.which === 13) {
-                return sendMessage(getMessageText());
+                return sendMessage(getMessageText(''));
             }
         });
-        sendMessage('Hello Philip! :)');
+        sendMessage('!Bienvenido a <strong>VIP Travel! :)</strong>');
         setTimeout(function () {
             return sendMessage('Hi Sandy! How are you?');
         }, 1000);
