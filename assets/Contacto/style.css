@@ -1,5 +1,6 @@
 .img {
 	width: 80%;
+	
 }
 
 .registro {
@@ -61,5 +62,9 @@ body {
 	  
   }
   
+  #enviar{
+	 /*  background-color: red; */
+	  width: 30%;
+  }
   
 
